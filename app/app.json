@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tynpu.allocations"
     },
     "android": {
       "package": "com.tynpu.allocations",
@@ -31,6 +32,7 @@
       "@react-native-community/datetimepicker"
     ],
     "extra": {
+      "apiUrl": "https://backend-zeta-henna-73.vercel.app/api",
       "eas": {
         "projectId": "fccc6c15-4869-47a4-884a-42ed5f3dcdf2"
       }

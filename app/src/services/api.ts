@@ -13,7 +13,20 @@ const resolveDevApiBaseUrl = () => {
   return 'http://localhost:3000/api';
 };
 
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || resolveDevApiBaseUrl();
+// Para builds standalone (APK), leer desde app.json extra
+const getApiUrl = () => {
+  // Primero intentar desde app.json extra (funciona en APK)
+  const extraApiUrl = Constants.expoConfig?.extra?.apiUrl;
+  if (extraApiUrl) return extraApiUrl;
+  
+  // Luego desde variable de entorno (funciona en desarrollo)
+  if (process.env.EXPO_PUBLIC_API_URL) return process.env.EXPO_PUBLIC_API_URL;
+  
+  // Fallback para desarrollo local
+  return resolveDevApiBaseUrl();
+};
+
+const API_BASE_URL = getApiUrl();
 
 console.log('🔗 Connecting to API:', API_BASE_URL);
 

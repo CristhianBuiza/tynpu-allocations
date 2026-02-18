@@ -1,5 +1,9 @@
 # Tynpu Allocations
 
+
+! SOLO ES NECESARIO LEVANTAR EL FRONT MOBILE - EL BACK ESTA DEPLOYADO EN VERCEL
+
+
 Sistema de gestión de asignaciones de consultores a proyectos. Permite administrar consultores, proyectos y sus asignaciones con validación de conflictos de horarios.
 
 ---
