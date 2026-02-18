@@ -37,6 +37,14 @@ Sistema de gestión de asignaciones de consultores a proyectos. Permite administ
 
 ---
 
+## Screenshots
+
+| Consultores | Proyectos | Asignaciones |
+|-------------|-----------|--------------|
+| ![Consultants](screenshots/consultants.jpeg) | ![Projects](screenshots/projects.jpeg) | ![Assignments](screenshots/assignments.jpeg) |
+
+---
+
 ## Estructura del Proyecto
 
 ```
